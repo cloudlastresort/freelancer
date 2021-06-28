@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body::-webkit-scrollbar {
+    width: .5rem;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: #000;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: grey;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid gray;  /* creates padding around scroll thumb */
+}
+body{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    //font-family: 'Oswald', sans-serif;
+    background-color: #161616;
+    color:#fff;    
+    overflow-x: hidden;
+}
+
+//--------------------SHARED------------------------------
+.text-underline {
+    width:10rem;
+    height: .2rem;
+    background-color: #fff;    
+}
+
+.button {
+    background-color: #fff;
+    padding: 1rem 3rem;
+    text-transform: capitalize;
+    letter-spacing: .08rem;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+    
+    &:hover{
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #000;
+        transition: all .8s linear;
+    }    
+    
+}
+
+.close,
+.close:active,
+.close:visited,
+.close:hover,
+.close:focus {
+    color: #fff;
+    position: absolute;
+    top:1rem;
+    right: 2rem;
+}
+
+
+//----------------------------TRANSITION EFFECT---------------------------
+.transition-fade{
+    opacity: 1;
+    transition: 2000ms;
+   
+}
+
+html.is-animating .transition-fade{
+    opacity: 0;  
+}
+
+//----------------------------------------------------------------------------
+
+//----------------------MENU & HOME---------------------------------
+
+.home{
+    width: 100vw;
+    height: 100vh;
+
+    & .logo{
+        font-family: 'Sacramento', cursive;
+        font-size: 2.5rem;
+    }
+
+    &-heading {
+        position: absolute;
+        top:45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        & p {
+            letter-spacing: .3rem;
+        }
+        
+    }   
+    
+    .navbar-nav li a,
+    .navbar-nav li a:active,
+    .navbar-nav li a:visited,
+    .navbar-nav li a:hover,
+    .navbar-nav li a:focus {
+        color:#fff;
+        font-weight: 700;
+    }
+
+    .social-icons {
+        position: absolute;
+        top:90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        & > * {
+            font-size: 1.4rem;            
+            &:not(:last-child){                
+                margin-right: 1rem;    
+            }
+        }       
+
+        & a,
+        & a:active,
+        & a:visited,
+        & a:hover,
+        & a:focus{
+            color:#fff;
+        }
+    }
+    
+    
+}
+
+//----------------------ABOUT-----------------------------
+.about {
+    font-family: 'Oswald', sans-serif;
+    & h1 {
+        letter-spacing: .2rem;
+        margin-top: 3rem;
+    }
+    & p {
+        line-height: 180%;
+        
+    }
+    &-me-img {
+        object-fit: cover;  
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+   .card {
+       height: 15rem;
+
+    
+   }
+}
+

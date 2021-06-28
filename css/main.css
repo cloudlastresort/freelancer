@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+body::-webkit-scrollbar {
+  width: .5rem;
+  /* width of the entire scrollbar */ }
+
+body::-webkit-scrollbar-track {
+  background: #000;
+  /* color of the tracking area */ }
+
+body::-webkit-scrollbar-thumb {
+  background-color: grey;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid gray;
+  /* creates padding around scroll thumb */ }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #161616;
+  color: #fff;
+  overflow-x: hidden; }
+
+.text-underline {
+  width: 10rem;
+  height: .2rem;
+  background-color: #fff; }
+
+.button {
+  background-color: #fff;
+  padding: 1rem 3rem;
+  text-transform: capitalize;
+  letter-spacing: .08rem;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  text-decoration: none; }
+  .button:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    transition: all .8s linear; }
+
+.close,
+.close:active,
+.close:visited,
+.close:hover,
+.close:focus {
+  color: #fff;
+  position: absolute;
+  top: 1rem;
+  right: 2rem; }
+
+.transition-fade {
+  opacity: 1;
+  transition: 2000ms; }
+
+html.is-animating .transition-fade {
+  opacity: 0; }
+
+.home {
+  width: 100vw;
+  height: 100vh; }
+  .home .logo {
+    font-family: 'Sacramento', cursive;
+    font-size: 2.5rem; }
+  .home-heading {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .home-heading p {
+      letter-spacing: .3rem; }
+  .home .navbar-nav li a,
+  .home .navbar-nav li a:active,
+  .home .navbar-nav li a:visited,
+  .home .navbar-nav li a:hover,
+  .home .navbar-nav li a:focus {
+    color: #fff;
+    font-weight: 700; }
+  .home .social-icons {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .home .social-icons > * {
+      font-size: 1.4rem; }
+      .home .social-icons > *:not(:last-child) {
+        margin-right: 1rem; }
+    .home .social-icons a,
+    .home .social-icons a:active,
+    .home .social-icons a:visited,
+    .home .social-icons a:hover,
+    .home .social-icons a:focus {
+      color: #fff; }
+
+.about {
+  font-family: 'Oswald', sans-serif; }
+  .about h1 {
+    letter-spacing: .2rem;
+    margin-top: 3rem; }
+  .about p {
+    line-height: 180%; }
+  .about-me-img {
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; }
+  .about .card {
+    height: 15rem; }
