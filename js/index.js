@@ -54,6 +54,14 @@ $(function(){
                 // async once(data){
                 //     contentAnimation();
                 // }
+                enter(){
+                    $(document).ready(function(){
+                        $('.counter').counterUp({
+                            delay:10,
+                            time:3000
+                        });
+                    });
+                }
             }
         ],
         views: [{
@@ -143,12 +151,7 @@ $(function(){
             afterEnter() {
               // refresh the parallax based on new page content
             //   parallax.refresh();
-            $(document).ready(function(){
-                $('.counter').counterUp({
-                    delay:10,
-                    time:3000
-                });
-            });
+            
             
             }
           },           
