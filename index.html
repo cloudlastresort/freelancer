@@ -16,22 +16,25 @@
     <link rel="stylesheet" href="./css/main.css">    
     <title>Carl Griffin | Freelancer</title>
 </head>
-<body>
-    <header id="swup" class="transition-fade home">
+<body data-barba="wrapper">
+    <div class="load-container">
+        <div class="loading-screen"></div>
+    </div>
+    <header class="home" data-barba="container" data-barba-namespace="home">
         <img class="img-fluid" src="./img/hero.jpg" alt="hero" style="object-position: top; object-fit: cover; height: 100vh; width:100vw">      
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
-            <a href="/index.html" class="text-light navbar-brand text-capitalize logo">carl griffin</a>
+            <a href="./index.html" class="text-light navbar-brand text-capitalize logo">carl griffin</a>
             <button class="navbar-toggler" type='button' data-bs-toggle='collapse' data-bs-target="#navbarResponsive" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="/about.html" class="nav-link">About</a>
+                        <a href="./about.html" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/resume.html" class="nav-link">
+                        <a href="./resume.html" class="nav-link">
                             Resume
                         </a>
                     </li>                    
@@ -42,7 +45,7 @@
                         <a href="" class="nav-link">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/contact.html" class="nav-link">Contact</a>
+                        <a href="./contact.html" class="nav-link">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -68,7 +71,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src='./node_modules/swup/dist/swup.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/index.js"></script>
 </body>
 </html>

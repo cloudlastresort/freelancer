@@ -16,11 +16,15 @@
     <link rel="stylesheet" href="./css/main.css">
     <title>Carl Griffin | About</title>
 </head>
-<body>
-    <main id="swup" class="transition-fade about">
+<body data-barba="wrapper">
+    <div class="load-container">
+        <div class="loading-screen"></div>
+    </div>
+    <main class="about" data-barba="container" data-barba-namespace="about">
+
         <h1 class="text-center fw-bold" style="margin-top: 5rem;">About Me</h1>
         <div class='text-underline mx-auto'></div>
-        <a class="close" href="/index.html"><i class="fas fa-times fa-2x"></i></a>
+        <a class="close" href="./index.html"><i class="fas fa-times fa-2x"></i></a>
         <div class="container mt-5">
             <div class="row g-5 align-items-center about-me">
                 <div class="col-12 col-lg-6">
@@ -28,7 +32,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sit numquam corporis dolore minus aspernatur atque, consequatur asperiores! Corrupti, quae aliquid. Pariatur commodi culpa suscipit, doloremque dolorum minima quaerat eos error earum, rem blanditiis est, quisquam repellat enim. Nostrum dicta temporibus, amet voluptates magnam, itaque quod accusantium facilis impedit obcaecati saepe maiores labore laborum repellat. Laudantium vero eaque explicabo, reiciendis error debitis quibusdam culpa magni esse aspernatur. Veritatis libero aliquid culpa, nulla, nobis, eum aliquam voluptate velit perspiciatis nisi fugit.</p>
                     <hr class="my-4" />
                     <div class="my-5"></div>
-                    <a href="/resume.html" class="button">Resume</a>
+                    <a href="./resume.html" class="button">Resume</a>
                 </div>
                 <div class="col-12 col-lg-6">
                     <img src="./img/johndoe.jpg" alt="johndoe" class="img-fluid about-me-img">
@@ -231,7 +235,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
-    <script src='./node_modules/swup/dist/swup.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/index.js"></script>
 </body>
 </html>
